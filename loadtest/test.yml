@@ -1,0 +1,12 @@
+config:
+  target: 'http://production-alb-nabiltest-371360986.eu-west-1.elb.amazonaws.com'
+  phases:
+    - duration: 60
+      arrivalRate: 100
+      rampTo: 150
+
+scenarios:
+  - flow:
+    - get:
+        url: "/"
+

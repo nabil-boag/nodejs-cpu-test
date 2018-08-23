@@ -1,0 +1,9 @@
+version: '2'
+services:
+  node-cpu-test:
+    container_name: node-cpu-test
+    ports:
+      - "80:80"
+    build:
+      context: .
+      
